@@ -1,0 +1,200 @@
+.header {
+  font-family: "Sf-Pro";
+}
+.header .header-top {
+  background-color: #f6f7f8;
+}
+.header .header-top a {
+  color: #666666;
+  font-size: 14px;
+  margin-right: 15px;
+  text-decoration: none;
+  font-weight: 200;
+}
+.header .header-top a:hover {
+  text-decoration: underline;
+}
+.header .header-top .nav-btn {
+  color: #666666;
+  font-size: 14px;
+  margin-right: 15px;
+  text-decoration: none;
+  font-weight: 200;
+}
+.header .header-top .career {
+  color: #0156c1;
+  border-color: #0156c1;
+  font-size: 14px;
+  font-weight: 500px;
+}
+.header .header-top .career:hover {
+  background-color: #0156c1;
+  color: #fff;
+  border-color: #0156c1;
+}
+.header .header-top img {
+  width: 14px;
+}
+.header .header-top .options {
+  position: relative;
+}
+.header .header-top .language-options {
+  display: none;
+  position: absolute;
+  top: 51px;
+  left: 73px;
+  background-color: white;
+  width: 133px;
+  height: 114px;
+  box-shadow: -1px 0px 10px 2px;
+  cursor: pointer;
+}
+.header .header-top .language-options .triangle {
+  position: absolute;
+  top: -18px;
+  left: 48px;
+  width: 32px;
+  height: 18px;
+  background-color: #fff;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.header .header-top .language-options .en, .header .header-top .language-options .ru {
+  height: 50%;
+  padding: 10px;
+  font-size: 20px;
+}
+.header .header-top .language-options .en:hover, .header .header-top .language-options .ru:hover {
+  background-color: #f6f7f8;
+}
+.header .header-top .language-options .en img, .header .header-top .language-options .ru img {
+  width: 20px;
+  margin-right: 5px;
+}
+.header .header-middle {
+  border-bottom: 1px solid #f6f7f8;
+}
+.header .header-middle .col-lg-9 img {
+  width: 100px;
+}
+.header .header-middle .col-lg-9 a {
+  margin: 0 16px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #918f8f;
+  transition: 0.2s;
+}
+.header .header-middle .col-lg-9 a:hover {
+  color: #262626;
+}
+.header .header-middle .col-lg-2 img {
+  width: 30px;
+  margin-right: 10px;
+}
+.header .header-middle .col-lg-2 a {
+  color: #0056c1;
+  font-weight: 900;
+  font-family: "Sf-Pro Bold";
+}
+.header .header-bottom .options .option {
+  margin: 0 10px;
+  padding: 15px 0;
+  transition: border-bottom 0.2s ease-in-out;
+  position: relative;
+}
+.header .header-bottom .options .option:hover {
+  border-bottom: 1px solid #5391dc;
+}
+.header .header-bottom .options .option::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #5391dc;
+  transition: width 0.2s ease-in-out;
+}
+.header .header-bottom .options .option:hover::after {
+  width: 100%;
+}
+.header .header-bottom .options .option a {
+  text-decoration: none;
+  color: #17253a;
+  font-size: 15px;
+  font-weight: 400;
+}
+.header .header-bottom .sub-credit, .header .header-bottom .sub-mortgage, .header .header-bottom .sub-deposits, .header .header-bottom .sub-cards, .header .header-bottom .sub-money-transfers, .header .header-bottom .sub-current-account, .header .header-bottom .sub-e-services, .header .header-bottom .sub-bank {
+  background-color: #f6f7f8;
+  padding: 20px 100px;
+  display: none;
+}
+.header .header-bottom .sub-credit a, .header .header-bottom .sub-mortgage a, .header .header-bottom .sub-deposits a, .header .header-bottom .sub-cards a, .header .header-bottom .sub-money-transfers a, .header .header-bottom .sub-current-account a, .header .header-bottom .sub-e-services a, .header .header-bottom .sub-bank a {
+  text-decoration: none;
+  color: #262626;
+  font-size: 17px;
+}
+.header .header-bottom .sub-credit ul li, .header .header-bottom .sub-mortgage ul li, .header .header-bottom .sub-deposits ul li, .header .header-bottom .sub-cards ul li, .header .header-bottom .sub-money-transfers ul li, .header .header-bottom .sub-current-account ul li, .header .header-bottom .sub-e-services ul li, .header .header-bottom .sub-bank ul li {
+  margin-bottom: 10px;
+}
+
+.header-search-menu {
+  display: none;
+}
+.header-search-menu textarea {
+  width: 90%;
+  height: 200px;
+  border: none;
+  font-size: 40px;
+  padding: 50px 0;
+  resize: none;
+}
+.header-search-menu textarea::-moz-placeholder {
+  color: #9f9f9f;
+}
+.header-search-menu textarea::placeholder {
+  color: #9f9f9f;
+}
+.header-search-menu textarea:focus {
+  outline: none;
+  caret-color: #9f9f9f;
+}
+.header-search-menu i {
+  font-size: 40px;
+  color: #9f9f9f;
+}
+
+.header-mobile {
+  display: none;
+}
+.header-mobile .opened-menu {
+  position: fixed;
+  top: 100px;
+  right: -100%;
+  width: 100%;
+  height: 700px;
+  background-color: #d0d0d0;
+  transition: right 0.5s ease-in-out;
+}
+
+@media only screen and (max-width: 991px) {
+  .nav-left, .bank-services, .header-bottom, .header-middle {
+    display: none !important;
+  }
+  .header-mobile {
+    display: block;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .header-mobile {
+    display: none !important;
+  }
+}
+@font-face {
+  font-family: "Sf-Pro";
+  src: url(/fonts/SFPRODISPLAYREGULAR.OTF);
+}
+@font-face {
+  font-family: "Sf-Pro Bold";
+  src: url(/fonts/SFPRODISPLAYBOLD.OTF);
+}/*# sourceMappingURL=style.css.map */
